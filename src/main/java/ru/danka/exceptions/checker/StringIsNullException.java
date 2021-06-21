@@ -1,4 +1,4 @@
 package ru.danka.exceptions.checker;
 
-public class StringIsNullException {
+public class StringIsNullException extends StringCheckerException {
 }

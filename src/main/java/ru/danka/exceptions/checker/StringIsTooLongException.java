@@ -1,4 +1,4 @@
 package ru.danka.exceptions.checker;
 
-public class StringIsTooLongException {
+public class StringIsTooLongException extends StringCheckerException {
 }
