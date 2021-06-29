@@ -2,24 +2,22 @@ package com.epam.rd.autotasks.exceptions;
 
 public class Conditions {
     public static void checkArgument(boolean value) {
-        checkArgument(value, "value is null");
+        //put your code here
     }
 
     public static void checkArgument(boolean value, String message) {
-        if (!value) {
-            throw new IllegalArgumentException(message);
-        }
+        //put your code here
+
     }
 
     public static void checkNotNull(Object obj) {
-        Utils.requireNonNull(obj);
+        //put your code here
+
     }
 
 
     public static void checkElementIndex(int index, int size) {
-        if ((index < 0) || (index >= size)) {
-            throw new IndexOutOfBoundsException("Index can't be " + index);
-        }
+        //put your code here
     }
 
 }
