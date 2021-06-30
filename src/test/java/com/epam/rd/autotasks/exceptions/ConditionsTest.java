@@ -19,6 +19,7 @@ public class ConditionsTest {
         Assertions.assertThrows(IllegalArgumentException.class, () -> Conditions.checkArgument(false));
 
         try {
+            Assertions.fail();
             Conditions.checkArgument(false, message);
         } catch (IllegalArgumentException illegalArgumentException) {
             Assertions.assertEquals(message, illegalArgumentException.getMessage());

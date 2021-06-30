@@ -18,6 +18,7 @@ public class UtilsTest {
         Assertions.assertDoesNotThrow(() -> Utils.requireNonNull(new Object()));
         Assertions.assertThrows(NullPointerException.class, () -> Utils.requireNonNull(null));
         try {
+            Assertions.fail();
             Utils.requireNonNull(null, message);
         } catch (NullPointerException nullPointerException) {
             Assertions.assertEquals(message, nullPointerException.getMessage());
