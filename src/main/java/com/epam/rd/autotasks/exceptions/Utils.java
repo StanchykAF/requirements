@@ -20,11 +20,6 @@ public class Utils {
 
     }
 
-    public static String toString(Supplier<Object> supplier) {
-        //put your code here
-        return "";
-    }
-
     public static boolean equals(Object object1, Object object2) {
         //put your code here
         return false;

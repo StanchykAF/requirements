@@ -36,7 +36,6 @@ public class UtilsTest {
         };
 
         Assertions.assertEquals(message, Utils.toString(obj));
-        Assertions.assertEquals(message, Utils.toString(() -> obj));
         Assertions.assertEquals("null", Utils.toString(null));
     }
 

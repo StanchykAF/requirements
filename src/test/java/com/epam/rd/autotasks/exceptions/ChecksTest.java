@@ -5,7 +5,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 
-public class ConditionsTest {
+public class ChecksTest {
     private String message;
 
     @BeforeEach
@@ -15,12 +15,12 @@ public class ConditionsTest {
 
     @Test
     public void checkArgumentTest() {
-        Assertions.assertDoesNotThrow(() -> Conditions.checkArgument(true));
-        Assertions.assertThrows(IllegalArgumentException.class, () -> Conditions.checkArgument(false));
+        Assertions.assertDoesNotThrow(() -> Checks.checkArgument(true));
+        Assertions.assertThrows(IllegalArgumentException.class, () -> Checks.checkArgument(false));
 
         try {
             Assertions.fail();
-            Conditions.checkArgument(false, message);
+            Checks.checkArgument(false, message);
         } catch (IllegalArgumentException illegalArgumentException) {
             Assertions.assertEquals(message, illegalArgumentException.getMessage());
         } catch (Throwable thr) {
@@ -31,9 +31,9 @@ public class ConditionsTest {
 
     @Test
     public void checkElementIndex() {
-        Assertions.assertDoesNotThrow(() -> Conditions.checkElementIndex(0, 10));
-        Assertions.assertThrows(IndexOutOfBoundsException.class, () -> Conditions.checkElementIndex(11, 10));
-        Assertions.assertThrows(IndexOutOfBoundsException.class, () -> Conditions.checkElementIndex(10, 10));
-        Assertions.assertThrows(IndexOutOfBoundsException.class, () -> Conditions.checkElementIndex(-1, 10));
+        Assertions.assertDoesNotThrow(() -> Checks.checkElementIndex(0, 10));
+        Assertions.assertThrows(IndexOutOfBoundsException.class, () -> Checks.checkElementIndex(11, 10));
+        Assertions.assertThrows(IndexOutOfBoundsException.class, () -> Checks.checkElementIndex(10, 10));
+        Assertions.assertThrows(IndexOutOfBoundsException.class, () -> Checks.checkElementIndex(-1, 10));
     }
 }
