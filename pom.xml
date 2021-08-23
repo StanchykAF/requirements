@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.epam.rd.autotasks</groupId>
-    <artifactId>checks-and-utils</artifactId>
+    <artifactId>requirements</artifactId>
     <version>1.0</version>
 
     <properties>
