@@ -1,7 +1,12 @@
 # Requirements
 
-Implement [Requirements](src/main/java/com/epam/rd/autotasks/requirements/Requirements.java) methods: 
-1. `requireNonNull(Object)` should throw new NullPointerException if object is null1
+The purpose of this exercise is to train you to work exceptions, to raise them in particular.
+
+Estimated workload of this exercise is _30 min_.
+
+### Description
+Please, implement [Requirements](src/main/java/com/epam/rd/autotasks/requirements/Requirements.java) methods: 
+1. `requireNonNull(Object)` should throw new NullPointerException if object is null
 1. `requireNonNull(Object, String)` should throw new NullPointerException with message if object is null
 1. `checkArgument(boolean)` if boolean is false should throw new IllegalArgumentException 
 1. `checkArgument(boolean, String)` if boolean is false should throw new IllegalArgumentException with message 
