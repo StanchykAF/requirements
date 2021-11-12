@@ -12,6 +12,6 @@ Please, implement [Requirements](src/main/java/com/epam/rd/autotasks/requirement
 1. `checkArgument(boolean, String)` if boolean is false should throw new IllegalArgumentException with message 
 1. `checkState(boolean)` if boolean is false should throw new IllegalStateException 
 1. `checkState(boolean, String)` if boolean is false should throw new IllegalStateException with message 
-1. `checkElementIndex(int, int)` if index out of bounds throw new IndexOutOfBoundsException
+1. `checkIndex(int, int)` if index out of bounds throw new IndexOutOfBoundsException. Index must be inside `[0, size)` section. 
 
 Such methods might be helpful to check arguments, object states. 
